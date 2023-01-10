@@ -16,9 +16,9 @@ function FirstPost() {
       <div>
         <Layout>
           <ArticleContainer>
-            <Articles title={"click counter the making"}></Articles>
-            <Articles title={"prgraming as a service"}></Articles>
-            <Articles title={"irrational thought"}></Articles>
+            <Articles header={"click counter the making"}></Articles>
+            <Articles header={"prgraming as a service"}></Articles>
+            <Articles header={"irrational thought"}></Articles>
           </ArticleContainer>
         </Layout>
       </div>
