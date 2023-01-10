@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Head from "next/head";
 import Layout from "../../component/layout";
+import Nav from "../../component/nav";
+import Articles from "../../component/Articles";
+import ArticleContainer from "../../component/ArticleContainer";
 
 function FirstPost() {
   return (
@@ -8,13 +11,15 @@ function FirstPost() {
       <Head>
         <title> welcome to my first post</title>
       </Head>
+      <Nav first={"home"} state={"reading"}></Nav>
+      <h1>Recent post</h1>
       <div>
         <Layout>
-          <h1>my first next js post</h1>
-          <Header title={"click counter the making"}></Header>
-          <Header title={"prgraming as a service"}></Header>
-          <Header title={"irrational thought"}></Header>
-          <Header title={"glass Mind"}></Header>
+          <ArticleContainer>
+            <Articles title={"click counter the making"}></Articles>
+            <Articles title={"prgraming as a service"}></Articles>
+            <Articles title={"irrational thought"}></Articles>
+          </ArticleContainer>
         </Layout>
       </div>
     </>
@@ -22,14 +27,3 @@ function FirstPost() {
 }
 
 export default FirstPost;
-
-function Header({ title }) {
-  return (
-    <>
-      <h2>{title}</h2>
-      <hr></hr>
-      <p>this is a tale of a software dev</p>
-      <Link href="/"> home</Link>
-    </>
-  );
-}

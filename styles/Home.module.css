@@ -1,4 +1,4 @@
-.container {
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -7,6 +7,8 @@
   align-items: center;
   background-color: azure;
 }
+ 
+
 
 .title a {
   color: #0070f3;
@@ -88,4 +90,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
