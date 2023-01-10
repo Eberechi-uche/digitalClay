@@ -2,15 +2,21 @@ import styles from "./layout.module.css";
 import Image from "next/image";
 import profile from "../public/images/profile2.jpeg";
 
-function Articles({ header }) {
+function Articles({ header, brief }) {
   return (
     <article className={styles.card}>
       <figure className={styles.imageContainer}>
-        <Image src={profile} width={500} height={500}></Image>
+        <Image
+          priority
+          src={profile}
+          width={500}
+          height={500}
+          alt="image of a monkey"
+        />
       </figure>
       <div className={styles.articleContent}>
         <h3>{header}</h3>
-        <p>{header}</p>
+        <p>{brief}</p>
       </div>
     </article>
   );

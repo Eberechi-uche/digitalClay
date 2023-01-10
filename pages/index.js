@@ -8,15 +8,15 @@ import ArticleContainer from "../component/ArticleContainer";
 import Articles from "../component/Articles";
 
 export async function getStaticProps() {
-  const allPostData = getSortedPostsData();
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostData,
+      allPostsData,
     },
   };
 }
 
-export default function Home({ allPostData }) {
+export default function Home({ allPostsData }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -28,12 +28,12 @@ export default function Home({ allPostData }) {
         state={"recent"}
         end={"music"}
       ></Nav>
-      <p>welcome to digital-clay</p>
-      <Link href="post/first-post">Posts</Link>
+      <h1>Blogs</h1>
+      <hr />
       <Layout>
         <ArticleContainer>
-          {allPostData.map(({ id, date, title }) => (
-            <Articles key={id} header={title}></Articles>
+          {allPostsData.map(({ id, date, title, brief }) => (
+            <Articles key={id} header={title} brief={brief}></Articles>
           ))}
         </ArticleContainer>
       </Layout>

@@ -17,3 +17,9 @@ a {
 a:hover {
   color: aliceblue;
 }
+h1 {
+  font-size: xx-large;
+}
+hr {
+  border: 2px double black;
+}

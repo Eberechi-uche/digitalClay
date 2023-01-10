@@ -1,7 +1,8 @@
---
-title: "testing"
-date: '2020-01-01'
+---
+title: "Click Counter the Making"
+brief: "Here i talked about my journey learning react, and building counter app  using useReducer and a customHook to really get a grasp on how react and reactHooks works"
 
+date: "2020-01-01"
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
