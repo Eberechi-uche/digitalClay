@@ -9,7 +9,7 @@
   border-radius: 10px;
   color: aliceblue;
   background-color: black;
-  padding: 0.4rem;
+  padding: 0.8rem;
   /* min-width: 100vw; */
 }
 .gr2 {
@@ -27,44 +27,40 @@
   border-radius: 20px 20px 0 0;
   background-color: whitesmoke;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  max-height: fit-content;
 }
 .imageContainer {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 100px;
 }
 
 .imageContainer img {
   max-width: 100%;
-  height: 200px;
+  height: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
 
 .articleContent {
   /* padding: 1rem 1rem; */
-  margin: 0;
+  margin: 10px;
   padding-bottom: 1rem;
 }
-.articleContent h3 {
-  font-size: 1.5rem;
-  width: min-content;
+
+.articleContent h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 50%;
   text-align: start;
-  letter-spacing: 1px;
-  line-height: 25px;
-}
-.articleContent h3 {
-  margin: 5px;
-  font-size: 2rem;
-  width: min-content;
-  text-align: start;
-  letter-spacing: 1px;
-  line-height: 25px;
+  line-height: 20px;
 }
 .articleContent p {
-  margin: 10px;
-  font-size: small;
+  margin-top: 1px;
 }
+
 @media screen and (min-width: 768px) {
   .gr2 {
     /* max-width: 608px; */
@@ -73,7 +69,7 @@
   }
   .card {
     display: grid;
-    grid-template-rows: 220px 1fr;
+    grid-template-rows: auto 1fr;
   }
 }
 @media screen and (min-width: 1080px) {
