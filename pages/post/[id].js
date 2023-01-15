@@ -33,7 +33,9 @@ export default function Pager({ postData }) {
       <Layout>
         <div className={utilStyles.fl}>
           <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
-          <Date dateString={postData.date}></Date>
+          <div>
+            <Date dateString={postData.date}></Date>
+          </div>
         </div>
 
         <hr />

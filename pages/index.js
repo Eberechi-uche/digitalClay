@@ -15,11 +15,10 @@ export default function Home() {
       <hr />
       <Layout>
         <p>
-          Automatically self-host any Google Font. Fonts are included in the
-          deployment and served from the same domain as your deployment. No
-          requests are sent to Google by the browser. Import the font you would
-          like to use from @next/font/google as a function. We recommend using
-          variable fonts for the best performance and flexibility.
+          Hello, welcome to DigitalClay, you can read about some of the things i
+          am working on, stay up to date with physical tech event happening in
+          your Location or listen online tech talk. currently i am still working
+          on the two but in the mean time you can read some of my articles
         </p>
       </Layout>
     </div>

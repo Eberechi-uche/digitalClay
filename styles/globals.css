@@ -31,5 +31,5 @@ a:hover {
   transform: scale(1.1);
 }
 hr {
-  border: 2px double black;
+  border: 0.1px solid rgb(205, 199, 199);
 }

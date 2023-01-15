@@ -54,6 +54,10 @@
   display: flex;
   justify-content: space-between;
 }
+.fl div {
+  display: grid;
+  place-content: center;
+}
 .btn {
   background-color: #4caf50; /* Green */
   border: none;
