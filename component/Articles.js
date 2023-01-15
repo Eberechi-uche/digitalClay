@@ -23,9 +23,7 @@ export function Articles({ header, brief, date }) {
       <div className={styles.articleContent}>
         <div>
           <h2>{header}</h2>{" "}
-          <p className={styles.muted}>
-            <Date dateString={date} />
-          </p>
+          <p className={styles.muted}>{date && <Date dateString={date} />}</p>
         </div>
         <hr />
         <p>{brief}</p>

@@ -1,5 +1,6 @@
 import Nav from "../component/nav";
 import Layout from "../component/layout";
+import { Articles, ArticleContainer } from "../component/Articles";
 
 export default function () {
   return (
@@ -8,11 +9,17 @@ export default function () {
       <h1>Community</h1>
       <hr></hr>
       <Layout>
-        <p>
-          ask question regarding blog post, see tech event happening around your
-          location, listen to hosted tech spaces
-        </p>
-        <p>working on this</p>
+        <h2>Coming soon..</h2>
+        <ArticleContainer>
+          <Articles
+            header={"Events"}
+            brief={"See Tech events happening in your location"}
+          ></Articles>
+          <Articles
+            header={"spaces"}
+            brief={"listen to tech space hosted online"}
+          ></Articles>
+        </ArticleContainer>
       </Layout>
     </>
   );
