@@ -28,7 +28,6 @@ a {
 }
 
 a:hover {
-  color: #ff970f;
   transform: scale(1.1);
 }
 hr {
