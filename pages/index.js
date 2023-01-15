@@ -1,27 +1,16 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Nav from "../component/nav";
-import { getSortedPostsData } from "../lib/post";
 import Layout from "../component/layout";
-import { Articles, ArticleContainer } from "../component/Articles";
+import utilStyles from "../styles/utils.module.css";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>home</title>
       </Head>
-      <Nav first={"DigitalClay"} second={"Blogs"} third={"Event"}></Nav>
+      <Nav first={"DigitalClay"} second={"Blogs"} third={"Community"}></Nav>
       <h1>Recent</h1>
       <hr />
       <Layout>

@@ -5,11 +5,14 @@ export default function () {
   return (
     <>
       <Nav first={"home"} second={"Blogs"}></Nav>
-      <h1>Events</h1>
+      <h1>Community</h1>
       <hr></hr>
       <Layout>
-        <h3>get list of tech event in your location</h3>
-        <p>Coming soon...</p>
+        <p>
+          ask question regarding blog post, see tech event happening around your
+          location, listen to hosted tech spaces
+        </p>
+        <p>working on this</p>
       </Layout>
     </>
   );

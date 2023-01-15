@@ -7,10 +7,10 @@ function Nav({ first, second, third }) {
       <Link href="/">
         <div>{first}</div>
       </Link>
-      <Link href="/Blog">
+      <Link href="/post/Blog">
         <div>{second}</div>
       </Link>
-      <Link href="/event">
+      <Link href="/community">
         <div>{third}</div>
       </Link>
     </div>

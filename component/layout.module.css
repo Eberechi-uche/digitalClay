@@ -48,6 +48,11 @@
   margin: 10px;
   padding-bottom: 1rem;
 }
+.articleContent div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .articleContent h2 {
   margin: 0;
@@ -59,6 +64,7 @@
 }
 .articleContent p {
   margin-top: 1px;
+  font-size: 0.7rem;
 }
 
 @media screen and (min-width: 768px) {

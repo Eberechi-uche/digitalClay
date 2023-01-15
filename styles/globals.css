@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-color: floralwhite;
+  background-color: whitesmoke;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -29,7 +29,7 @@ a {
 
 a:hover {
   color: #ff970f;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 hr {
   border: 2px double black;

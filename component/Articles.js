@@ -1,12 +1,13 @@
 import styles from "./layout.module.css";
 import Image from "next/image";
-import profile from "../public/images/profile2.jpeg";
+import profile from "../public/images/events.png";
+import Date from "./Date";
 
 export function ArticleContainer({ children }) {
   return <div className={styles.gr2}>{children}</div>;
 }
 
-export function Articles({ header, brief }) {
+export function Articles({ header, brief, date }) {
   return (
     <article className={styles.card}>
       <figure className={styles.imageContainer}>
@@ -20,7 +21,12 @@ export function Articles({ header, brief }) {
       </figure>
 
       <div className={styles.articleContent}>
-        <h2>{header}</h2>
+        <div>
+          <h2>{header}</h2>{" "}
+          <p className={styles.muted}>
+            <Date dateString={date} />
+          </p>
+        </div>
         <hr />
         <p>{brief}</p>
       </div>
