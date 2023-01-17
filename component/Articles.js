@@ -1,6 +1,5 @@
 import styles from "./layout.module.css";
 import Image from "next/image";
-import profile from "../public/images/events.png";
 import Date from "./Date";
 
 export function ArticleContainer({ children }) {
@@ -10,15 +9,7 @@ export function ArticleContainer({ children }) {
 export function Articles({ header, brief, date }) {
   return (
     <article className={styles.card}>
-      <figure className={styles.imageContainer}>
-        <Image
-          priority
-          src={profile}
-          width={500}
-          height={500}
-          alt="image of a monkey"
-        />
-      </figure>
+      <div className={styles.imageContainer}></div>
 
       <div className={styles.articleContent}>
         <div>
@@ -29,5 +20,24 @@ export function Articles({ header, brief, date }) {
         <p>{brief}</p>
       </div>
     </article>
+  );
+}
+export function ArticleNav({ header, brief, image }) {
+  return (
+    <section>
+      <div className={styles.cardNav}>
+        <Image
+          className={styles.BgImage}
+          priority
+          src={image}
+          alt="image of a monkey"
+        />
+        <hr />
+        <div className={styles.cardNavItems}>
+          <h3>{header}</h3>
+          <p>{brief}</p>
+        </div>
+      </div>
+    </section>
   );
 }

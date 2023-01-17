@@ -1,6 +1,8 @@
 import Nav from "../component/nav";
 import Layout from "../component/layout";
-import { Articles, ArticleContainer } from "../component/Articles";
+import { Articles, ArticleContainer, ArticleNav } from "../component/Articles";
+import events from "../public/images/event.png";
+import spaces from "../public/images/headphones.png";
 
 export default function () {
   return (
@@ -11,14 +13,16 @@ export default function () {
       <Layout>
         <h2>Coming soon..</h2>
         <ArticleContainer>
-          <Articles
+          <ArticleNav
             header={"Events"}
             brief={"See Tech events happening in your location"}
-          ></Articles>
-          <Articles
+            image={events}
+          ></ArticleNav>
+          <ArticleNav
             header={"spaces"}
             brief={"listen to tech space hosted online"}
-          ></Articles>
+            image={spaces}
+          ></ArticleNav>
         </ArticleContainer>
       </Layout>
     </>

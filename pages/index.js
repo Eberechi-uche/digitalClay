@@ -2,7 +2,11 @@ import Head from "next/head";
 import Link from "next/link";
 import Nav from "../component/nav";
 import Layout from "../component/layout";
+import { ArticleNav, ArticleContainer } from "../component/Articles";
+import listenIcon from "../public/images/techTalk.png";
+import blogIcon from "../public/images/blog.png";
 import utilStyles from "../styles/utils.module.css";
+import Hero from "../component/Hero";
 
 export default function Home() {
   return (
@@ -10,16 +14,26 @@ export default function Home() {
       <Head>
         <title>home</title>
       </Head>
-      <Nav first={"DigitalClay"} second={"Blogs"} third={"Community"}></Nav>
-      <h1>Recent</h1>
-      <hr />
+      <Hero>
+        <Nav first={"DigitalClay"} second={"Blogs"} third={"Community"}></Nav>
+      </Hero>
       <Layout>
-        <p>
-          Hello, welcome to DigitalClay, you can read about some of the things i
-          am working on, stay up to date with physical tech event happening in
-          your Location or listen online tech talk. currently i am still working
-          on the two but in the mean time you can read some of my articles
-        </p>
+        <ArticleContainer>
+          <Link href={"/post/Blog"}>
+            <ArticleNav
+              image={blogIcon}
+              header={"Blogs"}
+              brief={"Read about latest ideas happening in the tech space"}
+            ></ArticleNav>
+          </Link>
+          <Link href={"/community"}>
+            <ArticleNav
+              image={listenIcon}
+              header={"Community"}
+              brief={"meet and connect with fellow techies"}
+            ></ArticleNav>
+          </Link>
+        </ArticleContainer>
       </Layout>
     </div>
   );
